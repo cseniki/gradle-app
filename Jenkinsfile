@@ -1,13 +1,13 @@
 pipeline {
 agent any // Use any available agent
 tools {
-gradle 'Gradle' // Ensure this matches the name configured in Jenkins
+gradle 'gradle' // Ensure this matches the name configured in Jenkins
 jdk 'JDK'
 }
 stages {
 stage('Checkout') {
 steps {
-git branch: 'master', url: 'https://github.com/Thushardm/MyGradleProject.git'
+git branch: 'main', url: 'https://github.com/cseniki/gradle-app.git'
 }
 }
 stage('Build') {
